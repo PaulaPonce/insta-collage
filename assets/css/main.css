@@ -7,13 +7,7 @@ body{
 	color: #FFF;
 	background: linear-gradient(to bottom left, #5db78c, #ce7a52);
 }
-/*
-.gradient{
-	background: linear-gradient(to bottom left, #5db78c, #ce7a52);
-	background: linear-gradient(to left, #ce7a52, #a2817b);
-	background: linear-gradient(to right, rgba(162,129,123,0), rgba(162,129,123,1));
-}
-*/
+
 a{
 	color: #FFF;
 	font-weight: 700;
@@ -105,4 +99,12 @@ p.input-style{
 
 #footer p{
 	padding-top: 20px;
+}
+
+/* form validation */
+.input-group span{
+	background-color: rgba(51,51,51,0.3);
+	padding: .7em;  
+	color: white;
+	font-size: .7em;
 }
