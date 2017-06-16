@@ -7,6 +7,7 @@ function validateForm(){
 
 	var valNombre = document.getElementsByClassName("input-group")[0];
 	var valPass = document.getElementsByClassName("input-group")[1];
+	var btn = document.getElementsByClassName("input-group")[2];
 
 	if(nombre == null || nombre.length == 0 || /^\s+$/.test(nombre)){
 		var nombreSpan = document.createElement("span");
@@ -19,6 +20,9 @@ function validateForm(){
 		var passText = document.createTextNode("Contraseña incorrecta");
 		passSpan.appendChild(passText);
 		valPass.appendChild(passSpan);
+	}
+	else{
+		document.getElementById("inicio-sesion").setAttribute("href", "collage.html");
 	}
 
 	clear(); //resetear campos 

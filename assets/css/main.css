@@ -55,10 +55,11 @@ input::placeholder{
 	color: #FFF;
 	opacity: 0.2;
 }
-button.input-style{
+a.input-style{
 	background-color: transparent;
 	opacity: 1;
 	font-weight: 900;
+	padding: .5em 0;
 }
 p.input-style{
 	opacity: 1;
