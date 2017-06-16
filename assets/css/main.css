@@ -4,11 +4,32 @@ body{
 	font-weight: 400;
 	margin: 0;
 	padding: 0;
+	color: #FFF;
+	background: linear-gradient(to bottom left, #5db78c, #ce7a52);
+}
+/*
+.gradient{
+	background: linear-gradient(to bottom left, #5db78c, #ce7a52);
+	background: linear-gradient(to left, #ce7a52, #a2817b);
+	background: linear-gradient(to right, rgba(162,129,123,0), rgba(162,129,123,1));
+}
+*/
+a{
+	color: #FFF;
+	font-weight: 700;
+}
+a:hover{
+	color: #FFF;
 }
 
 /* Header */
+#header p{
+	font-size: .9em;
+	padding: 1em 0;
+}
 #header .logo{
 	padding: 4em 8em 2em 8em;
+	color: #FFF;
 }
 #header img{
 	width: 100%;
@@ -24,14 +45,30 @@ body{
 	display: block;
 }
 
+/*
+input::placeholder{
+	color: #FFF !important;
+	opacity: 1;
+}
+*/
+
 .input-style{
 	height: 50px;
 	font-size: 16px;
 	border-radius: 5px !important;
 	margin-top: .5em;
 	margin-bottom: .5em !important;
+	color: #FFF;
+	opacity: 0.2;
 }
-
+button.input-style{
+	background-color: transparent;
+	opacity: 1;
+	font-weight: 900;
+}
+p.input-style{
+	opacity: 1;
+}
 #form p{
 	height: auto;
 }
@@ -50,15 +87,20 @@ body{
 	position: relative;
 	top: -.7em;
 	font-size: 1em;
+	margin: 0 10px;
 	padding: 0 .25em;
 }
 .fa-circle-o:before{
 	content: none;
 }
 
+.fb{
+	font-size: 1.5em;
+}
+
 /* Footer */
 #footer .border{
-	border-top: 1px solid #333;
+	border-top: 1px solid #FFF;
 }
 
 #footer p{
