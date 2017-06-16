@@ -1,3 +1,4 @@
+//Validation
 var btnInicio = document.getElementById("inicio-sesion");
 btnInicio.addEventListener("click", validateForm);
 
@@ -31,4 +32,22 @@ function validateForm(){
 function clear(){
 	document.getElementById("name").value = "";
 	document.getElementById("password").value = "";
+}
+
+//Drag and Drop
+function drag(event){
+	event.dataTransfer.setData("text", event.target.id); /*los navegadores leen las imágenes como tipo texto*/
+}
+
+/* esto va siempre */
+function finalDrop(event){
+	event.preventDefault(); /* para que el navegador no manipule los datos */
+}
+
+function drop(event){
+	event.preventDefault();
+
+	/* lo que está en el drag se debe traspasar al drop, se llama. (dataTransfer) */
+	var dato = event.dataTransfer.getData("text"); /* obtener imágenes */
+	event.target.appendChild(document.getElementById(dato));
 }
